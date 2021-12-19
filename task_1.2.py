@@ -7,4 +7,4 @@ hh_res = current_time_sec % 3600
 mm = hh_res // 60
 ss = hh_res % 60
 
-print(f"Current time is: {hh}:{mm}:{ss}")
+print(f"Current time is: {hh:02}:{mm:02}:{ss:02}")
