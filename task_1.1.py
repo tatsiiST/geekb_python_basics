@@ -1,8 +1,11 @@
 # Задача 1-1: поработать с переменными, создать несколько, вывести на экран
 # запросить у пользователя несколько чисел и строк и сохранить их в переменные + вывести на экран
 
-name = input('Enter your name:')
-age = int(input('Enter your age:'))
-animal = input('Enter your favorite animal:')
-
-print('Тебя зовут %s!' % name, 'тебе %s' % age, 'лет,', 'и твое любимое животное - %s.' % animal)
+a = 'hello'
+b = 'world!'
+print(f"{a}, {b}")
+num1 = int(input('Введите целое число - '))
+num2 = float(input('Введите десятичное число -'))
+print(f"Вы ввели числа {num1} и {num2}")
+word = input('Введите любое слово: ')
+print(f"{word} - отличный выбор!")

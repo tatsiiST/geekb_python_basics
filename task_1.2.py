@@ -3,8 +3,13 @@
 
 current_time_sec = int(input('Please enter your local time in seconds:'))
 hh = current_time_sec // 3600
-hh_res = current_time_sec % 3600
-mm = hh_res // 60
-ss = hh_res % 60
+mm = (current_time_sec // 60) - (hh * 60)
+ss = current_time_sec % 60
 
 print(f"Current time is: {hh:02}:{mm:02}:{ss:02}")
+
+# time = int(input("Введите время в секундах - ")
+# hours = time // 3600
+# minutes = time / 60
+# seconds = time / 60
+#print(f"{hh:02}:{mm % 60:02}:{ss % 60:02}")

@@ -2,15 +2,15 @@
 # Вывести сообщение о результате. Если фирма отработала с прибылью вычислите рентабельность выручки.
 # Далее запросите численность сотрудников фирмы и определите прибыль фирмы в расчете на одного сотрудника.
 
-income = int(input('Enter your company income: '))
-costs = int(input('Enter your company costs: '))
-if income > costs:
-    profitability = income-costs
-    rent = profitability/income
-    print(f"Great job! You have {profitability} profitability")
-    worker = int(input('How many people work at your company: '))
-    print(f"Your company profitability for one worker is {profitability/worker} ")
-elif income == costs:
-    print('Not bad')
+revenue = float(input("Введите значение выручки - "))
+costs = float(input("Введите значение издержек - "))
+result = revenue - costs # формула прибыли
+if result > 0:
+    print(f"Поздравляю! Ваша компания работает с прибылью {result} !")
+    print(f"Рентабельность выручки - {result / revenue:.3f}")
+    workers = int(input("Сколько счастливых целых сотрудников работает в вашей компании? - "))
+    print(f"Прибыль на одного сотрудника - {result / workers:.2f}")
+elif result < 0:
+    print(f"Вы работаете с убытком - {-result}")
 else:
-    print('Good luck')
+    print(f"Ноль - это тоже хороший результат! Зато стабильно!")
